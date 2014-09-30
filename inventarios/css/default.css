@@ -1,0 +1,71 @@
+section
+{
+	width: calc(100% - 232px);
+	height: calc(100% - 140px);
+	padding: 1.25em 1em;
+	display: inline-block;
+}
+	section .menu
+	{
+		width: 97%;
+		height: 39px;
+		background: url('../../images/titulos.jpg') no-repeat;
+		background-position-y: 36px;
+		background-repeat-x: inherit;
+	}
+	section .menu li
+	{
+		position: absolute;
+		width: 165px;
+		height: 30px;
+		padding: 11px 0 0 41px;
+	}
+	section .menu .activo
+	{
+		
+		color:#346a7a;
+		z-index: 1;
+		background-image: url('../../images/folderwhite.png');
+		background-repeat: no-repeat;
+	}
+	section .menu .inactivo
+	{
+		color:#fff;
+		background-image: url('../../images/folderblue.png');
+		background-repeat: no-repeat;
+	}
+	section .contenido
+	{
+		width: 100%;
+		height: calc(100% - 40px);
+		background: white;
+		border: 1px solid #bcbcbc;
+		border-radius:0 4px 4px 4px 4px;
+	}
+	section .acciones
+	{
+		width: calc(100% - 40px);
+		padding: 20px;
+		text-align: center;
+	}
+	section .acciones .nuevo
+	{
+		float: right;
+		color: white;
+	}
+	section .acciones .buscar
+	{
+		border-radius: 30px;
+		border: 1px solid #ccc;
+		padding: 5px 10px;
+		width: 280px;
+		background-image: url('../../images/buscar.png');
+		background-position:270px;
+		background-repeat: no-repeat; 
+	}
+	section .acciones .nuevo a
+	{
+		background: #a3bd31;
+		border-radius: 4px;
+		padding: 10px;
+	}

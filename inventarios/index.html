@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Confeccionar</title>
+	<link href="../css/normalize.css" rel="stylesheet">
+	<link href="../css/basic.css"  rel="stylesheet">
+	<link href="css/default.css"  rel="stylesheet">
+	<link href='https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,300,700' rel='stylesheet'>
+</head>
+<body>
+	<header class="reset">
+    	<div class="logo display restaurar">
+        	<img src="../images/header/logo.jpg">
+        </div>
+        <div class="user display">
+        	<div class="box">
+        		<figure class="userimage display restaurar">
+        		</figure>
+        		<div class="userdate display restaurar">
+        			<p class="username">Fernando rodriguez</p>
+        			<p class="userinfo">Ultima vez 18 de julio de 2014 - 8:01pm</p>
+        		</div>
+        	</div>
+        </div>
+        <div class="usermenu display restaurar">
+        	
+        		<div class="display">
+        			<img src="../images/header/planeador.png">
+        			<a>Planeador</a>
+        		</div>
+        		<div class="display">
+        			<img src="../images/header/mensajes.png">
+        			<a>Mensajes</a>
+        		</div>
+        		<div class="display">
+        			<img src="../images/header/notificaciones.png" >
+        			<a>Notificaciones</a>
+        		</div>
+        		<div class="display">
+        			<img src="../images/header/configuracion.png">
+        			<a>Configuración</a>
+        		</div>
+        		<div class="display float">
+        			<img src="../images/header/cerrar.png" >
+        			<a>Cerrar Sesión</a>
+        		</div> 
+        	      	
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a>Informes</a>
+            </li>
+            <li>
+                <a>Pedidos</a>
+            </li>
+            <li>
+                <a>Clientes</a>
+            </li>
+            <li>
+                <a>Mis facturas</a>
+                <div class="span">
+                    <span>25</span>
+                </div>
+            </li>
+            <li>
+                <a>Cartera</a>
+            </li>
+            <li>
+                <a>Contabilidad</a>
+            </li>
+            <li>
+                <a>Inventario</a>
+                <div  class="span">
+                    <span>7</span>
+                </div>
+            </li>
+            <li>
+                <a>Procesos</a>
+            </li>
+            <li>
+                <a>Proveedores</a>
+            </li>
+            <li>
+                <a>Oportunidades</a>
+            </li>
+            <li>
+                <a>Planeador</a>
+            </li>
+        </ul>
+    </nav>	
+    <section>
+    	<div class="menu">
+    		<ul>
+    			<a><li id="pf" onclick="jQuery('#mp').removeClass('activo', 1000, 'easeOutBounce');jQuery('#mp').addClass('inactivo', 1000, 'easeOutBounce');jQuery('#pf').removeClass('inactivo');jQuery('#pf').addClass('activo');jQuery('#pf').removeClass('marginfolder');jQuery('#mp').addClass('marginfolder')" class="activo">Producto Final</li></a>
+    			<a><li id="mp" onclick="jQuery('#mp').removeClass('marginfolder');jQuery('#pf').addClass('marginfolder');jQuery('#pf').removeClass('activo');jQuery('#pf').addClass('inactivo');jQuery('#mp').removeClass('inactivo');jQuery('#mp').addClass('activo')" class="inactivo marginfolder">Materia Prima</li></a>
+    		</ul>
+    	</div>
+    	<div class="contenido">
+    		<div class="acciones">
+    			<input placeholder="Referencia o Producto para buscar" class="buscar" type="text">
+    			<div class="nuevo">
+    				<a>Nuevo Producto</a>
+    			</div>
+    		</div>    		
+    	</div>
+    </section>
+    <script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</body>
+</html>
